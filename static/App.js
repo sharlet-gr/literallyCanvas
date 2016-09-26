@@ -51,11 +51,17 @@
 	var LC = __webpack_require__(159);
 
 	var MyApp = React.createClass({
-	    displayName: 'MyApp',
+	  displayName: 'MyApp',
+	  getInitialState: function getInitialState() {
+	    return {
+	      imageURLPrefix: "lc-assets/img"
+	    };
+	  },
 
-	    render: function render() {
-	        return React.createElement(LC.LiterallyCanvasReactComponent, { imageURLPrefix: 'lc-assets/img' });
-	    }
+
+	  render: function render() {
+	    return React.createElement(LC.LiterallyCanvasReactComponent, { imageURLPrefix: 'lc-assets/img' });
+	  }
 	});
 
 	ReactDOM.render(React.createElement(MyApp, null), document.getElementById('main'));
