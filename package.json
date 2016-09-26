@@ -4,7 +4,9 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --inline --content-base static/ --history-api-fallback"
+    "start": "npm run start-babel && npm run webpack",
+    "start-babel": "babel --presets react App.js --out-dir static",
+    "webpack": "webpack"
   },
   "author": "Sharlet Wilson",
   "dependencies": {

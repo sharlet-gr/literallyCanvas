@@ -5,7 +5,7 @@ const LC = require('literallycanvas');
 
 const MyApp = React.createClass({
     render: function() {
-        return <LC.LiterallyCanvasReactComponent imageURLPrefix="/lc-assets/img" />;
+        return <LC.LiterallyCanvasReactComponent imageURLPrefix="lc-assets/img" />;
     }
 });
 
